@@ -1,0 +1,81 @@
+/*
+Noah Rothgaber
+02134094
+noah_rothgaber@student.uml.edu
+*/
+
+#data_form {
+    display: table;
+    padding-left: 28px; /* Add padding to avoid cutting into the input fields with the border */
+    padding-right: 28px;
+}
+
+#range_title { /* purple text for the prompt */
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+}
+
+label { /* i ended up having to make the inputs as a table so theyd be aligned. MISERABLE PROCESS */
+    display: table-cell;
+}
+
+input {
+    display: table-cell;
+    margin-left: 20%;
+}
+
+#row_paragraph{
+    display: table-row;
+}
+
+#columnLBound {
+    color: blue;
+}
+
+#columnUBound {
+    color: red;
+}
+
+#rowLBound {
+    color: green;
+}
+
+#rowUBound {
+    color: darksalmon;
+}
+
+#data_form {
+    border:  1px solid black;
+}
+
+#generate_button {
+    align-items: center;
+    background-color: aliceblue; /* who is alice???*/
+    border-color: aliceblue;
+    align-content: center;
+    margin-left: 25%;
+
+}
+
+#generatedTable table {
+    width: 100%;
+    border-collapse: collapse; /* This makes it look like an excel spreadsheet vs seprate borders */
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#generatedTable th, #generatedTable td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+#generatedTable tr:nth-child(even) /* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */ {
+    background-color: #f2f2f2;
+}
+
+#generatedTable th {
+    background-color: #4CAF50;
+    color: white;
+}
